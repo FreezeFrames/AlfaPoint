@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_saloonhome"
+        android:icon="@drawable/uslugi"
+        android:title="@string/title_saloonhome" />
+    <item
+        android:id="@+id/menu_saloon2"
+        android:icon="@drawable/mastera"
+        android:title="@string/title_masters" />
+    <item
+        android:id="@+id/menu_saloon3"
+        android:icon="@drawable/profil_salona"
+        android:title="@string/title_profile" />
+    <item
+        android:id="@+id/menu_saloon4"
+        android:icon="@drawable/glavn"
+        android:title="@string/title_services" />
+</menu>

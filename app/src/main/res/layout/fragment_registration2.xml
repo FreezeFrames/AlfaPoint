@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SaloonRegistrationFragment2">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorGreyMain">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/shape_rect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Город"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+            <TextView
+                android:id="@+id/textView8"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/shape_rect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Страна"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/mapRegistr" />
+
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="138dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/shape_rect2"
+                android:text="Далее"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/spinner2" />
+
+            <TextView
+                android:id="@+id/spinner2"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Время работы"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@+id/editText5"
+                app:layout_constraintTop_toBottomOf="@+id/spinner" />
+
+            <TextView
+                android:id="@+id/spinner"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rect"
+                android:gravity="center_vertical"
+                android:paddingLeft="10dp"
+                android:text="Режим работы"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="@+id/editText5"
+                app:layout_constraintTop_toBottomOf="@+id/editText5" />
+
+            <EditText
+                android:id="@+id/editText5"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/shape_rect"
+                android:ems="10"
+                android:hint="Email"
+                android:imeOptions="flagForceAscii"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="@+id/editText2"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText4" />
+
+            <EditText
+                android:id="@+id/editText4"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/shape_rect"
+                android:ems="10"
+                android:hint="Телефон в формате (ххх)ххххххх"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="10dp"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/editText3" />
+
+            <EditText
+                android:id="@+id/editText3"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/shape_rect"
+                android:ems="10"
+                android:gravity="center_vertical"
+                android:hint="Адрес"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences"
+                android:paddingLeft="10dp"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="@+id/editText2"
+                app:layout_constraintRight_toRightOf="@+id/editText2"
+                app:layout_constraintTop_toBottomOf="@+id/editText2" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/shape_rect"
+                android:ems="10"
+                android:hint="Название"
+                android:inputType="textCapSentences"
+                android:paddingLeft="10dp"
+                android:textSize="12sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/mapRegistr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="37dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="37dp"
+                android:background="@drawable/shape_rect2"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <TextView
+                    android:id="@+id/textView13"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/shape_rect"
+                    android:paddingLeft="30dp"
+                    android:paddingTop="5dp"
+                    android:paddingRight="30dp"
+                    android:paddingBottom="5dp"
+                    android:text="TextView"
+                    android:textSize="19sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                <TextView
+                    android:id="@+id/textView12"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Код активации"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="18sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </android.support.constraint.ConstraintLayout>
+            >
+        </android.support.constraint.ConstraintLayout>
+    </ScrollView>
+
+</FrameLayout>

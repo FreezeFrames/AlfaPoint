@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorGreyMain">#383a44</color>
+
+    <color name="colorStatusbar">#484a53</color>
+    <color name="colorWhite">#ffffff</color>
+    <color name="colorLight">#efefef</color>
+    <color name="colorLight2">#eeeeee</color>
+
+    <color name="colorLightGrey2">#919297</color>
+    <color name="colorLightGrey3">#32343e</color>
+    <color name="colorServiceGrey">#4d4f58</color>
+    <color name="colorGreen">#00a000</color>
+    <color name="colorNumber">#464851</color>
+
+
+    <color name="colorMainGreen">#00A000</color>
+    <color name="colorDarkMain">#232530</color>
+    <color name="colorRed">#ac2020</color>
+    <color name="colorDarkerMain">#31333D</color>
+    <color name="colorDarkerMain2">#3b3d47</color>
+    <color name="colorLightGreyMain">#4D4F58</color>
+    <color name="colorBlack">#000000</color>
+
+    <color name="calendar_selected_day_bg">#00a000</color>
+
+
+</resources>

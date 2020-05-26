@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_saloon"
+    app:startDestination="@id/navigation_saloonhome">
+
+    <fragment
+        android:id="@+id/navigation_saloonhome"
+        android:name="ru.alfapoint.ui.SaloonEntriesFragment"
+        android:label="SaloonHomeFragment"
+        tools:layout="@layout/fragment_saloonentries" >
+        <action
+            android:id="@+id/action_SaloonHome_to_SaloonProfileFragment"
+            app:destination="@id/navigation_saloonprofile" />
+        <action
+            android:id="@+id/action_SaloonHome_to_SaloonMasters"
+            app:destination="@id/navigation_saloonmasters" />
+        <action
+            android:id="@+id/action_SaloonHome_to_SaloonServices"
+            app:destination="@id/navigation_saloonservices" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_saloonmasters"
+        android:name="ru.alfapoint.ui.SaloonMastersFragment"
+        android:label="SaloonMastersFragment"
+        tools:layout="@layout/fragment_registration5" >
+        <action
+           android:id="@+id/action_masters_to_home"
+           app:destination="@id/navigation_saloonhome" />
+       <action
+           android:id="@+id/action_masters_servicesFragment"
+           app:destination="@id/navigation_saloonservices" />
+       <action
+           android:id="@+id/action_masters_to_profile"
+           app:destination="@id/navigation_saloonprofile" />
+        <action
+            android:id="@+id/action_masters_to_mastertime"
+            app:destination="@+id/saloonRegistrationFragment6"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_saloonprofile"
+        android:name="ru.alfapoint.ui.SaloonProfileFragment"
+        android:label="SaloonProfileFragment"
+        tools:layout="@layout/fragment_saloonprofile" >
+        <action
+            android:id="@+id/action_SaloonProfile_to_SaloonHome"
+            app:destination="@id/navigation_saloonhome" />
+        <action
+            android:id="@+id/action_SaloonProfile_to_SaloonServices"
+            app:destination="@id/navigation_saloonservices" />
+        <action
+            android:id="@+id/action_SaloonProfile_to_masters"
+            app:destination="@id/navigation_saloonmasters" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_saloonservices"
+        android:name="ru.alfapoint.ui.SaloonServicesFragment"
+        android:label="SaloonServiesFragment"
+        tools:layout="@layout/fragment_registration3" >
+        <action
+            android:id="@+id/action_SaloonServices_to_SaloonHome"
+            app:destination="@id/navigation_saloonhome" />
+        <action
+            android:id="@+id/action_SaloonServices_to_SaloonProfileFragment"
+            app:destination="@id/navigation_saloonprofile" />
+        <action
+            android:id="@+id/action_navigation_saloonservices_to_saloonRegistrationFragment4"
+            app:destination="@id/SaloonServicesFragment2" />
+        <action
+            android:id="@+id/action_services_to_masters"
+            app:destination="@id/navigation_saloonmasters" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/SaloonServicesFragment2"
+        android:name="ru.alfapoint.ui.SaloonServicesFragment2"
+        android:label="SaloonServicesFragment2"
+        tools:layout="@layout/fragment_registration4" >
+        <action
+            android:id="@+id/action_SaloonServicesFragment2_to_navigation_saloonservices"
+            app:destination="@id/navigation_saloonservices" />
+        <action
+            android:id="@+id/action_SaloonServicesFragment2_to_saloonRegistrationFragment5"
+            app:destination="@id/saloonRegistrationFragment5" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/saloonRegistrationFragment5"
+        android:name="ru.alfapoint.ui.SaloonRegistrationFragment5"
+        android:label="fragment_registration5"
+        tools:layout="@layout/fragment_registration5" >
+        <action
+            android:id="@+id/action_saloonRegistrationFragment5_to_SaloonServicesFragment2"
+            app:destination="@id/SaloonServicesFragment2" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/saloonRegistrationFragment6"
+        android:name="ru.alfapoint.ui.SaloonMastersTime"
+        android:label="fragment_registration6"
+        tools:layout="@layout/fragment_registration6" >
+        <action
+            android:id="@+id/action_saloonRegistrationFragment6_to_SaloonServicesFragment2"
+            app:destination="@id/navigation_saloonmasters" />
+    </fragment>
+</navigation>

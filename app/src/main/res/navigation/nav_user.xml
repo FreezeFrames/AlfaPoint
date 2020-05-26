@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_user"
+    app:startDestination="@id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="ru.alfapoint.ui.UserHomeFragment"
+        android:label="fragment_start"
+        tools:layout="@layout/fragment_userhome" >
+        <action
+            android:id="@+id/action_startFragment_to_profileFragment"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_startFragment_to_servicesFragment"
+            app:destination="@id/userAllEntriesFragment" />
+        <action
+            android:id="@+id/action_startFragment_to_mapFragment"
+            app:destination="@id/navigation_map" />
+    </fragment>
+    <fragment
+        android:id="@+id/navigation_map"
+        android:name="ru.alfapoint.ui.UserMapFragment"
+        android:label="fragment_map"
+        tools:layout="@layout/fragment_usermap">
+        <action
+            android:id="@+id/action_profileFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_profileFragment_to_servicesFragment"
+            app:destination="@id/userAllEntriesFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_profileFragment"
+            app:destination="@id/navigation_profile" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_profile"
+        android:name="ru.alfapoint.ui.UserProfileFragment"
+        android:label="fragment_profile"
+        tools:layout="@layout/fragment_userprofile">
+        <action
+            android:id="@+id/action_profileFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_profileFragment_to_entriesFragment"
+            app:destination="@id/userAllEntriesFragment" />
+        <action
+            android:id="@+id/action_profileFragment_to_mapFragment"
+            app:destination="@id/navigation_map" />
+
+    </fragment>
+
+    <fragment
+        android:id="@+id/userAllEntriesFragment"
+        android:name="ru.alfapoint.ui.UserAllEntriesFragment"
+        android:label="fragment_user_allentries"
+        tools:layout="@layout/fragment_user_allentries">
+        <action
+            android:id="@+id/action_entries_to_navigation_home"
+            app:destination="@id/navigation_home" />
+        <action
+            android:id="@+id/action_entries_to_mapFragment"
+            app:destination="@id/navigation_map" />
+        <action
+            android:id="@+id/action_entries_to_profileFragment"
+            app:destination="@id/navigation_profile" />
+        <action
+            android:id="@+id/action_entries_to_navigation_entries"
+            app:destination="@id/navigation_entries" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_entries"
+        android:name="ru.alfapoint.ui.UserFilterFragment"
+        android:label="fragment_services"
+        tools:layout="@layout/fragment_userfilter">
+        <action
+            android:id="@+id/action_navigation_entries_to_userAllEntriesFragment"
+            app:destination="@id/userAllEntriesFragment" />
+    </fragment>
+
+
+</navigation>

@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.UserProfileFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ru.alfapoint.Additional.CustomScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <android.support.constraint.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@color/colorGreyMain">
+
+            <android.support.constraint.ConstraintLayout
+                android:id="@+id/clUser1"
+                android:layout_width="0dp"
+                android:layout_height="200dp"
+                android:visibility="gone"
+                app:layout_constraintLeft_toLeftOf="@+id/textView7"
+                app:layout_constraintRight_toRightOf="@+id/etName"
+                app:layout_constraintTop_toBottomOf="@+id/textView92">
+
+                <fragment
+                    android:id="@+id/mapR"
+                    android:name="com.google.android.gms.maps.SupportMapFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+            </android.support.constraint.ConstraintLayout>
+
+            <CheckBox
+                android:id="@+id/textView92"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Показать карту"
+                android:buttonTint="@color/colorWhite"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintLeft_toLeftOf="@+id/etMail"
+                app:layout_constraintTop_toBottomOf="@+id/etMail" />
+
+            <TextView
+                android:id="@+id/textView96"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:background="@drawable/shape_rect"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Укажите город"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="@+id/textView7"
+                app:layout_constraintRight_toRightOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/textView7" />
+
+            <TextView
+                android:id="@+id/textView7"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/shape_rect"
+                android:gravity="center_vertical"
+                android:paddingLeft="20dp"
+                android:text="Укажите страну"
+                android:textSize="16sp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+            <CheckBox
+                android:id="@+id/checkBox17"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:buttonTint="@color/colorWhite"
+                android:text="Согласие на обработку персональных данных"
+                android:textColor="@color/colorWhite"
+                android:textColorHint="@color/colorWhite"
+                android:textColorLink="@color/colorWhite"
+                app:layout_constraintLeft_toLeftOf="@+id/textView92"
+                app:layout_constraintRight_toRightOf="@+id/textView7"
+                app:layout_constraintTop_toBottomOf="@+id/clUser1" />
+
+            <EditText
+                android:id="@+id/etMail"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rect"
+                android:hint="@string/stringEmail"
+                android:inputType="textEmailAddress"
+                android:imeOptions="flagForceAscii|actionDone"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintLeft_toLeftOf="@+id/etName"
+                app:layout_constraintRight_toRightOf="@+id/etName"
+                app:layout_constraintTop_toBottomOf="@+id/etPhone" />
+
+            <EditText
+                android:id="@+id/etPhone"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight="1"
+                android:background="@drawable/shape_rect"
+                android:hint="@string/stringPhone"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:maxLength="10"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintLeft_toLeftOf="@+id/etName"
+                app:layout_constraintRight_toRightOf="@+id/etName"
+                app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="22dp"
+                android:background="@drawable/shape_button_green"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:text="Редактировать"
+                android:textColor="@color/colorWhite"
+                android:weightSum="1"
+                app:layout_constraintLeft_toLeftOf="@+id/etName"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox17" />
+
+            <Button
+                android:id="@+id/button4"
+                android:layout_width="wrap_content"
+                android:layout_height="42dp"
+                android:layout_marginTop="22dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/shape_button2"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+                android:text="Сохранить"
+                android:textColor="@color/colorWhite"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintRight_toRightOf="@+id/etName"
+                app:layout_constraintTop_toBottomOf="@+id/checkBox17" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="TextView"
+                android:textColor="@color/colorWhite"
+                android:textSize="21sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/etName"
+                android:layout_width="0dp"
+                android:layout_height="42dp"
+                android:layout_marginLeft="17dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="17dp"
+                android:background="@drawable/shape_rect"
+                android:hint="@string/stringName"
+                android:imeOptions="actionNext"
+                android:inputType="textCapSentences|textPersonName"
+                android:paddingLeft="20dp"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView96" />
+
+        </android.support.constraint.ConstraintLayout>
+    </ru.alfapoint.Additional.CustomScrollView>
+
+</FrameLayout>

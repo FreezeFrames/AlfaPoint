@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "944367212985",
+    "firebase_url": "https://alfapoint-31c9b.firebaseio.com",
+    "project_id": "alfapoint-31c9b",
+    "storage_bucket": "alfapoint-31c9b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:944367212985:android:2ec40a7785db6a09",
+        "android_client_info": {
+          "package_name": "ru.alfapoint"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "944367212985-cv89n7k31rkljnabkt6ktrnl8u1eqp4l.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBN1ieUk-7d2a2HQ7YhoBzdztZ8RaQcTwU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
